@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: minmax(6rem, auto) repeat(5, 4rem);
+    gap: 1px;
+    width: calc(24rem + 13px);
+    margin: 0 auto;
+    border: 5px solid lightblue;
+    border-radius: 5px;
+}
+
+.output {
+    grid-column: 1 / span 4;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding-right: 15px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+
+.lastput {
+    font-size: 1rem;
+}
+
+.currentput {
+    font-size: 2.5rem;
+}
+
+button {
+    background-color: bisque;
+}
+button:hover {
+    background-color: cornflowerblue;
+}
+
+.buttonarea {
+    background-color: aliceblue;
+}
+
+
+.AC {
+    grid-column: 1 / span 2;
+}
+
+
+.EQU {
+    grid-column: 3 / span 2;
+}
